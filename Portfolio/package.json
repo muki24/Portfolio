@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-main",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

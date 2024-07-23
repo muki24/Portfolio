@@ -1,0 +1,82 @@
+.project > img {
+    width: 350px;
+    height: 180px;
+}
+
+.project {
+    align-items: center;
+    margin: 15px;
+    transition: transform 100ms ease-in;
+}
+
+.project:hover {
+    color: white;
+    background-color: #f64c08;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.05) 200ms ease-in-out;
+}
+
+.project__content {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.project__content > h4 {
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.project__content > p {
+    font-size: 20px;
+}
+
+@media only screen and (max-width : 1024px) {
+    .project{ 
+      width: 100%;
+      font-size: 40px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+  }
+  
+  @media only screen and (max-width : 768px) {
+    .project{ 
+      width: 100%;
+      font-size: 30px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+  }
+  
+  @media only screen and (max-width :425px) {
+    .project{ 
+      width: 100%;
+      font-size: 10px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+    .project > img {
+      width: 200px;
+      height: 100px;
+      align-items: center;
+      display:block;
+      margin: 5px;
+    }
+    .project__content > h4 ,.project__content > p {
+      font-size: 10px;
+    }
+    .project:hover{
+      width: 200px;
+      height: 100px;
+    }
+  }
